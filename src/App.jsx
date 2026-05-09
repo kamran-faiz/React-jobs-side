@@ -6,7 +6,7 @@ import {Route,
     } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import MainLayout from './layouts/MainLayout'
-import JobsPage from './JobsPage'
+import JobsPage from './pages/JobsPage'
 
 
 const router = createBrowserRouter(
