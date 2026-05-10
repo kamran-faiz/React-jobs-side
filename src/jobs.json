@@ -1,5 +1,5 @@
-{ 
- "jobs":[
+{
+  "jobs": [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -83,6 +83,23 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "title": "Commodo quisquam eu ",
+      "type": "Full-Time",
+      "location": "Sit et enim voluptat",
+      "description": "Tempora dolores quid",
+      "salary": "$50K - 60K",
+      "company": {
+        "name": "Mercer Hull Traders",
+        "description": "Magnam quae in illum",
+        "contact": {
+          "email": "vapipopi@mailinator.com",
+          "phone": "+1 (799) 237-1109"
+        }
+      },
+      "id": "FS-85g3ToBI"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
