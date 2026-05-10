@@ -8,20 +8,23 @@ const JobListings = ({isHome = false}) => {
 
     useEffect  (() => {
       const fetchJobs = async () => {
+        const apiUrl = isHome ? 'http://localhost:5000/jobs?_page=1&_per_page=3' :
+        'http://localhost:5000/jobs'
 
         try{
-          const res = await fetch('http://localhost:5000/jobs');
+        const res = await fetch(apiUrl);
         const data = await res.json();
-        setJobs(data);
+        // Handle both raw array and wrapped object (json-server v1 pagination)
+        setJobs(Array.isArray(data) ? data : (data.data || []));
         } catch(error) {
-          console.log('Error fecthing data');
+          console.log('Error fetching data', error);
         } finally {
           setLoading(false);
         }
         
       }
       fetchJobs();
-    }, [])
+    }, [isHome])
   return (
     <div>
       <section className="bg-blue-50 px-4 py-10">
