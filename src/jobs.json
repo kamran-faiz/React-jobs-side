@@ -83,6 +83,22 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "title": "Delectus placeat s",
+      "type": "Internship",
+      "location": "Est sunt nisi in lab",
+      "description": "Fugit et veniam nu",
+      "salary": "Under $50K",
+      "company": {
+        "name": "Reid Browning LLC",
+        "description": "Adipisicing eaque qu",
+        "contact": {
+          "email": "pajupi@mailinator.com",
+          "phone": "+1 (535) 136-2027"
+        }
+      },
+      "id": "41ZjGjqbPE8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
